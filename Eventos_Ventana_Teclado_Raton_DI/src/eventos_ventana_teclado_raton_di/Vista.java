@@ -5,6 +5,7 @@
  */
 package eventos_ventana_teclado_raton_di;
 
+import java.awt.Color;
 import java.awt.FlowLayout;
 import java.awt.GridLayout;
 import java.awt.Image;
@@ -88,12 +89,14 @@ public class Vista extends JFrame {
         this.add(panel_Caracter_Coord);
 
         JPanel caracter_Panel = new JPanel();
+        caracter_Panel.setBackground(Color.RED);
         carcter_Label = new JLabel(LETRA);
         caracter_Panel.add(carcter_Label);
         panel_Caracter_Coord.add(caracter_Panel);
         
         JPanel panel_Coord=new JPanel();
         panel_Coord.setLayout(new GridLayout(2,1));
+        panel_Coord.setBackground(Color.CYAN);
         coordenadaX_Label = new JLabel(COORDENADA_X);
         coordenadaY_Label = new JLabel(COORDENADA_Y);
 
@@ -104,6 +107,7 @@ public class Vista extends JFrame {
 
     private void anadir_Panel_TextField_Dentro_De() {
         JPanel panel_Dentro_Label = new JPanel();
+        panel_Dentro_Label.setBackground(Color.ORANGE);
         this.add(panel_Dentro_Label);
         dentroDe_JLabel = new JLabel(DENTRO_DE);
         panel_Dentro_Label.add(dentroDe_JLabel);
